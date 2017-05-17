@@ -1,0 +1,46 @@
+
+<?php  
+// CONTROLLER
+require_once(__DIR__.'/../controller/Recette_controller.php');
+
+// Nombre d'ingrédient
+$nbIngredients = isset($_GET['nbIngredients']) ? $_GET['nbIngredients'] : 4;
+// HELPER
+//require_once(__DIR__.'/Helper/SessionsHelper.php');
+
+
+  if(isset($_POST['btn_ajouter_recette']))
+  {
+    $recette = new Recette_controlleur();
+   echo($recette -> add_recipe($_POST,$_FILES));
+  }
+
+?>
+
+<main>
+		<h2 class="h2_creation_recette">Créer vos recettes et faites vous plaisir</h2>
+		<form method="post" enctype="multipart/form-data">
+    		<p class="placement1">
+       			<label>Nom de la recette:</label>  <input type="text" name="input_recipe_name" id="dim"/>
+       		</p>
+       		
+       		<p class="placement3">
+       			<label >Photo:</label>  <input type="file" name="picture_recipe" />
+       		</p>       			 
+    		
+    		<p class="placement">
+       			<label>Ingrédients:</label>
+       			<?php for($i=1 ; $i <= $nbIngredients ; $i++): ?>
+				<input type="text" name="input_ingredient[]" placeholder="ingredient n°<?=$i?>" id= "loupe" size="30" maxlength="50"><br/>
+				<?php endfor ?>
+				<a href="<?=BASE_URL."/../index.php?page=addRecette&nbIngredients=".($nbIngredients+1);?>" name="ajouter" >Ajouter un ingredient</a>
+				<br />
+       		</p>
+
+       		<p class="placement2">
+       			<label>Instruction recette:</label> <br/> <textarea name="input_recipe" id="input_recipe"></textarea>
+       			<br /> 
+       			<button type="submit" name="btn_ajouter_recette">Ajouter une recette</button>
+       		</p>
+		</form>
+</main>

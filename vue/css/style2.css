@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	background: url("image/fond_fruit.jpg");	
+}
+
+form{	
+	border: solid 1px;
+	background-color: lightgrey;
+	width: 20%;
+	margin: auto;
+	border-radius: 10px;
+	padding:2.5% 5%;	
+}
+
+.formu{
+	position: relative;
+
+}
+
+.formu1{
+	position: absolute;
+	top: 34%;
+	left: 35%;
+	
+}
+
+a{
+	text-decoration: none;
+	color: black;
+
+}
+
+
+form p{
+	text-align: justify;
+}
+
+
+
+.test{
+	
+	text-align: right;
+	padding-left: 0;
+	width: 100%;	
+	margin-bottom: 0;
+}
+
+.haut{
+	background-color:rgb(30,30,30);	
+	width:100%;
+	display: inline-block;	
+	font-family: 'Bad Script', cursive, sans-serif;
+	font-size: 2rem;	
+	margin-left: 0;
+	height: 5rem;	
+	padding-bottom: 0;
+	text-align: center;	
+	padding-bottom: 15px;
+		
+}
+
+h1{
+	display: inline-block;
+	margin-top: 0px;
+	color: rgb(147,220,154);
+	height: 60px;	
+	height: 100%;
+	margin-top: 0;
+	padding-top: 0;
+	
+}
+
+.haut p{
+	display: inline-block;	
+}
+
+.haut img{
+
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: top;	
+	width: 80px;
+	height: 80px;
+	margin-top: 5px;
+
+	
+}
+
+header{
+	margin-bottom: 10%;
+	margin-top: 0;
+}
+
+.onglets2{
+	width: 150px;
+	margin-left: 52px;
+}
+
+.onglets3{
+	width: 150px;
+	margin-left: 4px;
+}
+
+.onglets4{
+	width: 150px;	
+}

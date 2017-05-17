@@ -1,0 +1,23 @@
+	
+	<form method="post">
+		<h2>Inscription</h2>
+		<?php if(!empty($message_erreur)): ?>
+	    <div class="alert alert-danger fade in">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Error!</strong><?= ' '.$message_erreur ?>
+	    </div>
+		<?php elseif(!empty($message_confirmation)): ?>
+	    <div class="alert alert-success fade in">
+	        <a href="#" class="close" data-dismiss="alert">&times;</a>
+	        <strong>Success!</strong><?= ' '.$message_confirmation ?>.
+	    </div>
+		<?php endif ;?>
+		
+		<p><label>User </label><input type="texte" name="input_user_name" class="onglet1"></p>
+		<p><label>Adresse mail </label><input type="email" name="input_mail" class="onglet3"></p>
+		<p><label>Mot de passe </label><input type="password" name="input_password" class="onglet4"></p>
+		<p><label>Répéter Mot de passe </label><input type="password" name="input_confirmation_password" class="onglet5"></p>		
+		<p><label>Ville </label><input type="texte" name="input_ville" class="onglet9"></p>
+		<button type="submit" name="btn_inscription">Inscription</button>
+	</form>	
+	<p class="test"><a href="Connexion.html">Connexion</a></p>
