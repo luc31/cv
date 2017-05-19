@@ -1,0 +1,24 @@
+{
+  "name": "premierpas",
+  "version": "0.0.1",
+  "description": "utilisation gulp",
+  "main": "index",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "1"
+  },
+  "keywords": [
+    "luc"
+  ],
+  "author": "luc",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}
